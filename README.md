@@ -1,4 +1,4 @@
-# Notion_PDF
+# Embed PDF presentation in Notion as Individual Images
 ## Description
 The goal of this small project was to automate the process of splitting a PDF presentation into individual images and then embedding these inside a given Notion page to have all my notes for a lecture in one specific place. The splitting of the PDF was simple using the pdf2image Python library, but to use the Notion API to add images to a page, those images must be hosted remotely so I have to write code that uploaded these images to an AWS S3 bucket to then embed within the Notion page as a link.
 
