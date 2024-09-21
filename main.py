@@ -35,7 +35,7 @@ def main():
 
     print("Uploaded to S3!")
 
-    notion_token = "secret_yNBh8wX6Bq79LLWJGiAm9dOV0FOWPmDAOefDfarFond"
+    notion_token = os.getenv('NOTION_TOKEN')
     
     bucket_name = 'pptxnotion'
     sorted_aws_files = sorted(get_s3_image_links(bucket_name, folder_name),
