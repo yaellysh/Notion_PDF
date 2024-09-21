@@ -1,6 +1,5 @@
 from notion_upload import upload_image_to_notion
-from aws_images import get_s3_image_links
-from s3_upload import upload_image_to_s3
+from s3_upload import upload_image_to_s3, get_s3_image_links
 from presentation_convert import convert_pdf_to_images
 import sys, shutil, os
 
