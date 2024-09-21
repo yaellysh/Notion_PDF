@@ -1,9 +1,6 @@
 import boto3
 from botocore.exceptions import NoCredentialsError, ClientError
 
-import boto3
-from botocore.exceptions import ClientError
-
 def check_file_exists(bucket_name, object_name):
     s3_client = boto3.client('s3')
 
